@@ -6,7 +6,7 @@ This project is a Flutter application designed to manage a waitlist for a perfum
 It was an 8-hour non-commercial hackathon project.   
 It includes features such as localization and integration with Firebase for saving waitlist data.
 
-[![Flutter Test & Build](https://github.com/ubu2020user/fragrance-waitlist-showcase/actions/workflows/debug-flutter-web.yml/badge.svg)](https://github.com/ubu2020user/fragrance-waitlist-showcase/actions/workflows/debug-flutter-web.yml)
+[![[DEBUG] Flutter Test, Build](https://github.com/ubu2020user/fragrance-waitlist-showcase/actions/workflows/debug-flutter-web.yml/badge.svg?branch=main)](https://github.com/ubu2020user/fragrance-waitlist-showcase/actions/workflows/debug-flutter-web.yml)
 
 ## Project Structure
 
