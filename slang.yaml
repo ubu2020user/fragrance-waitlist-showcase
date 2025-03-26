@@ -1,0 +1,5 @@
+base_local: en
+fallback_strategy: base_locale
+timestamp: true
+statistics: true
+input_directory: lib/i18n

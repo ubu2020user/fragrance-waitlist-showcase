@@ -1,0 +1,94 @@
+name: 'Create Env Files'
+description: 'This composite action creates env files for the project in env/.env and web/firebase-messaging-sw.js'
+inputs:
+  FIREBASE_API_KEY:
+    description: 'Firebase API Key'
+    required: true
+  FIREBASE_APP_ID:
+    description: 'Firebase App ID'
+    required: true
+  FIREBASE_AUTH_DOMAIN:
+    description: 'Firebase Auth Domain'
+    required: true
+  FIREBASE_DATABASE_URL:
+    description: 'Firebase Database URL'
+    required: true
+  FIREBASE_MESSAGING_SENDER_ID:
+    description: 'Firebase Messaging Sender ID'
+    required: true
+  FIREBASE_PROJECT_ID:
+    description: 'Firebase Project ID'
+    required: true
+  FIREBASE_STORAGE_BUCKET:
+    description: 'Firebase Storage Bucket'
+    required: true
+  GOOGLE_LOGIN_WEB_CLIENT_ID:
+    description: 'Google Login Web Client ID'
+    required: true
+  MEASUREMENT_ID:
+    description: 'Measurement ID'
+    required: true
+  FIREBASE_VAPID_KEY:
+    description: 'Firebase VAPID Key'
+    required: true
+  log:
+    description: 'Log level of the deployed app'
+    required: false
+    default: "error"
+  use_firebase_emulators:
+    description: 'Use Firebase Emulators'
+    required: false
+    default: "false"
+  PROXIED:
+    description: 'Proxied mode'
+    required: false
+    default: "false"
+runs:
+  using: "composite"
+  steps:
+    - name: Create env directory and .env file
+      shell: bash
+      run: |
+        mkdir -p env
+        FIREBASE_EMULATORS_BOOL=false
+        PROXIED_BOOL=false
+        if [ "${{ inputs.use_firebase_emulators }}" = "true" ]; then
+          FIREBASE_EMULATORS_BOOL=true
+        fi
+        if [ "${{ inputs.PROXIED }}" = "true" ]; then
+          PROXIED_BOOL=true
+        fi
+        echo '{
+          "APIKEY": "${{ inputs.FIREBASE_API_KEY }}",
+          "APPID": "${{ inputs.FIREBASE_APP_ID }}",
+          "AUTHDOMAIN": "${{ inputs.FIREBASE_AUTH_DOMAIN }}",
+          "DATABASEURL": "${{ inputs.FIREBASE_DATABASE_URL }}",
+          "MEASUREMENTID": "${{ inputs.MEASUREMENT_ID }}",
+          "MESSAGINGSENDERID": "${{ inputs.FIREBASE_MESSAGING_SENDER_ID }}",
+          "PROJECTID": "${{ inputs.FIREBASE_PROJECT_ID }}",
+          "STORAGEBUCKET": "${{ inputs.FIREBASE_STORAGE_BUCKET }}",
+          "GOOGLE_LOGIN_WEB_CLIENT_ID": "${{ inputs.GOOGLE_LOGIN_WEB_CLIENT_ID }}",
+          "VAPID_KEY": "${{ inputs.FIREBASE_VAPID_KEY }}",
+          "use_firebase_emulators": '${FIREBASE_EMULATORS_BOOL}',
+          "PROXIED": '${PROXIED_BOOL}', 
+          "log": "${{ inputs.log }}" 
+        }' > env/.env
+
+    - name: Notify of env creation
+      shell: bash
+      run: echo "[SUCCESS] Env file created at env/.env"
+
+#    - name: Replace firebaseConfig in firebase-messaging-sw.js
+#      shell: bash
+#      run: |
+#        sed -i 's/apiKey: ".*"/apiKey: "${{ inputs.FIREBASE_API_KEY }}"/' web/firebase-messaging-sw.js
+#        sed -i 's/authDomain: ".*"/authDomain: "${{ inputs.FIREBASE_AUTH_DOMAIN }}"/' web/firebase-messaging-sw.js
+#        sed -i 's#databaseURL: ".*"#databaseURL: "${{ inputs.FIREBASE_DATABASE_URL }}"#' web/firebase-messaging-sw.js
+#        sed -i 's/projectId: ".*"/projectId: "${{ inputs.FIREBASE_PROJECT_ID }}"/' web/firebase-messaging-sw.js
+#        sed -i 's/storageBucket: ".*"/storageBucket: "${{ inputs.FIREBASE_STORAGE_BUCKET }}"/' web/firebase-messaging-sw.js
+#        sed -i 's/messagingSenderId: ".*"/messagingSenderId: "${{ inputs.FIREBASE_MESSAGING_SENDER_ID }}"/' web/firebase-messaging-sw.js
+#        sed -i 's/appId: ".*"/appId: "${{ inputs.FIREBASE_APP_ID }}"/' web/firebase-messaging-sw.js
+
+#    - name: Notify of firebaseConfig replacement
+#      shell: bash
+#      run: echo "[SUCCESS] firebaseConfig replaced in web/firebase-messaging-sw.js"

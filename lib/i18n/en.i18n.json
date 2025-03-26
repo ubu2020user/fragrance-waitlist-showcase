@@ -1,0 +1,74 @@
+{
+  "Ingredients": "Ingredients",
+  "Vanilla": [
+    "Vanilla",
+    "Vanilla is known for its sweet and comforting scent."
+  ],
+  "PinkPeppercorn": [
+    "Pink Peppercorn",
+    "Pink Pepper is known for its spicy and warm scent."
+  ],
+  "Amber": [
+    "Amber",
+    "Amber is known for its warm and musky scent."
+  ],
+  "Calamus": [
+    "Calamus",
+    "Calamus is known for its sweet and spicy scent."
+  ],
+  "Cypriol": [
+    "Cypriol",
+    "Cypriol is known for its earthy and woody scent."
+  ],
+  "headerText": {
+    "isAllAbout": "is all about",
+    "simplicity": "simplicity",
+    "quality": "quality",
+    "elegance": "elegance",
+    "sustainability": "sustainability"
+  },
+  "and": "and",
+  "composedForElegance": "Composed for Elegance",
+  "notifyMe": "Notify Me" ,
+  "sizes": "Sizes",
+  "descriptionText": {
+    "isA": "is a",
+    "fragranceThat": "fragrance that is composed of the",
+    "finestIngredients": "finest ingredients",
+    "eachIngredient": "Each ingredient is carefully selected to create a",
+    "readBelow": "scent. Read about the ingredients below.",
+    "elegant": "elegant",
+    "unique": "unique"
+  },
+  "notifyMeText": {
+    "beNotified": "Be notified when",
+    "sellsFirstBottle": "sells its first bottle.",
+    "youWillBeNotified": "You will be notified soon.",
+    "personalComment": "Personal Comment"
+  },
+  "name": {
+    "firstName": "First Name",
+    "lastName": "Last Name"
+  },
+  "email": {
+    "emailAddress": "Email Address",
+    "isRequired": "Email Address is required",
+    "invalid": "Invalid email address"
+  },
+  "benefits": {
+    "Benefits": "Benefits",
+    "paris": ["Made in Paris", "This product is crafted in Paris by Diptyque."],
+    "soldInGermany": ["Sold in Germany", "Available for purchase in Germany."],
+    "transparency": ["Transparency", "Full transparency about partners and origins of raw materials."],
+    "testBeforeBuy": ["Test before Buy", "A free sample with every order to try before unpacking the main perfume."],
+    "twoFreeSamples": ["Two Free Samples", "Two free Diptyque samples with all orders."],
+    "visitDiptyque": "Visit Diptyque to learn more.",
+    "visit": "Visit"
+  },
+  "notice": {
+    "title": "Important Notice",
+    "description": "This is a non-commercial website aimed at gathering interest in this perfume. Please note, it is not affiliated with Diptyque in any way, but created by fans of the brand.",
+    "visitDiptyque": "Visit Diptyque to learn more about the brand and its products.",
+    "visit": "Visit"
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "composedForElegance": "Geschaffen für Eleganz",
+  "Ingredients": "Zutaten",
+  "Vanilla": [
+    "Vanille",
+    "Vanille ist bekannt für ihren süßen und beruhigenden Duft."
+  ],
+  "PinkPeppercorn": [
+    "Rosa Pfefferkörner",
+    "Rosa Pfeffer ist bekannt für seinen würzigen und warmen Duft."
+  ],
+  "Amber": [
+    "Bernstein",
+    "Bernstein ist bekannt für seinen warmen und moschusartigen Duft."
+  ],
+  "Calamus": [
+    "Kalmus",
+    "Kalmus ist bekannt für seinen süßen und würzigen Duft."
+  ],
+  "Cypriol": [
+    "Zypergras",
+    "Zypergras ist bekannt für seinen erdigen und holzigen Duft."
+  ],
+  "headerText": {
+    "isAllAbout": "steht für",
+    "simplicity": "Nachhaltigkeit",
+    "quality": "Qualität",
+    "elegance": "Eleganz",
+    "sustainability": "Nachhaltigkeit"
+  },
+  "and": "und",
+  "notifyMe": "Benachrichtige mich",
+  "sizes": "Größen",
+  "descriptionText": {
+    "isA": "ist ein",
+    "fragranceThat": "Duft, komponiert aus den",
+    "finestIngredients": "besten Ingredienzien",
+    "eachIngredient": "Jede Zutat wird sorgfältig ausgewählt, um einen",
+    "readBelow": "Duft zu formen. Lesen Sie mehr über die Zutaten.",
+    "elegant": "eleganten",
+    "unique": "einzigartigen"
+  },
+  "notifyMeText": {
+    "beNotified": "Benachrichtigt werden, wenn",
+    "sellsFirstBottle": "die erste Flasche verkauft.",
+    "youWillBeNotified": "Sie werden bald benachrichtigt.",
+    "personalComment": "Persönlicher Kommentar"
+  },
+  "name": {
+    "firstName": "Vorname",
+    "lastName": "Nachname"
+  },
+  "email": {
+    "emailAddress": "E-Mail-Adresse",
+    "isRequired": "E-Mail-Adresse ist erforderlich",
+    "invalid": "Ungültige E-Mail-Adresse"
+  },
+  "benefits": {
+    "Benefits": "Vorteile",
+    "paris": ["Hergestellt in Paris", "Das Produkt wird in Paris von Diptyque hergestellt."],
+    "soldInGermany": ["Verkauft in Deutschland", "In Deutschland erhältlich."],
+    "transparency": ["Transparenz", "Volle Transparenz über Partner und Herkunft der Rohstoffe."],
+    "testBeforeBuy": ["Testen vor dem Kauf", "Eine kostenlose Probe bei jeder Bestellung, um das Hauptparfüm vor dem Auspacken zu testen."],
+    "twoFreeSamples": ["Zwei kostenlose Proben", "Zwei kostenlose Diptyque-Proben bei allen Bestellungen."],
+    "visitDiptyque": "Besuchen Sie Diptyque, um mehr zu erfahren.",
+    "visit": "Zur Seite"
+  },
+  "notice": {
+    "title": "Wichtiger Hinweis",
+    "description": "Dies ist eine nicht-kommerzielle Website, die darauf abzielt, Interesse an diesem Parfüm zu wecken. Bitte beachten Sie, dass sie in keiner Weise mit Diptyque in Verbindung steht, sondern von Fans der Marke erstellt wurde.",
+    "visitDiptyque": "Erfahren Sie mehr bei Diptyque.",
+    "visit": "Zur Seite"
+  }
+}
