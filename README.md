@@ -8,6 +8,9 @@ It includes features such as localization and integration with Firebase for savi
 
 [![[DEBUG] Flutter Test, Build](https://github.com/ubu2020user/fragrance-waitlist-showcase/actions/workflows/debug-flutter-web.yml/badge.svg?branch=main)](https://github.com/ubu2020user/fragrance-waitlist-showcase/actions/workflows/debug-flutter-web.yml)
 
+## Showcase
+Click [Fragrance Website](https://fragrance-europe.web.app/) to see the results.
+
 ## Project Structure
 
 - [lib/main.dart](./lib/main.dart): The entry point of the application. Initializes Firebase and sets up localization.
